@@ -49,8 +49,8 @@ function App() {
 | Propriedade          | Tipo       | Descrição                                                                                                                       |
 | -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | `storageKey`         | `string`   | Usado para salvar o idioma atual no localStorage, ela é opcional, caso não seja passada será salvo com a chave `rtk::language`. |
-| `defaultLanguage`    | `string`   | Define um idioma padrão para o seu projeto, caso não seja passado será usado o valor default `pt`.                              |
 | `languages`          | `object`   | Objeto contendo os idiomas, chaves de identificação e as traduções desejadas.                                                   |
+| `defaultLanguage`    | `string`   | Define um idioma padrão para o seu projeto, caso não seja passado será usado o valor default `pt`.                              |
 | `availableLanguages` | `string[]` | Array contendo todos os idiomas disponíveis no seu array `languages`.                                                           |
 
 </details>
