@@ -1,6 +1,6 @@
 {
   "name": "rtk-translate",
-  "version": "1.0.35",
+  "version": "1.0.37",
   "description": "'rtk-translate' - é uma biblioteca de tradução leve e intuitiva para React. Projetada para simplicidade e eficiência, ela permite que desenvolvedores integrem suporte multilíngue aos seus projetos React de maneira rápida e sem complicações.",
   "author": "vitor-nogueira-dev",
   "license": "MIT",
@@ -8,6 +8,15 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
+  "keywords": [
+    "translation",
+    "react",
+    "localization",
+    "i18n",
+    "multilanguage",
+    "rtk",
+    "translate"
+  ],
   "engines": {
     "node": ">=10"
   },
