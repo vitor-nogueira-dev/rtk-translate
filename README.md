@@ -139,7 +139,8 @@ function SellectLang() {
 ```
 
 #### Exemplo de uso com botões:
-**atenção o onClick precisa ter uma callback, conforme o código abaixo!**
+>⚠️ atenção o onClick precisa ter uma callback, conforme o código abaixo!
+
 ```typescript
 import { useTranslation } from 'rtk-translate';
 
