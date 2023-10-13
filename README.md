@@ -32,7 +32,7 @@ function App() {
         storageKey='sua-chave-no-storage' // Chave usada para salvar o idioma selecionado no storage.
         languages={...} // Forneça seus idiomas e traduções aqui. Veja o exemplo abaixo.
         defaultLanguage="seu-idioma-default" // Idioma padrão da aplicação.
-        availableLanguages={["pt", "en", ...]} // Idiomas que você disponibilizou nas traduções. Exemplo abaixo.
+        availableLanguages=[...] // Idiomas que você disponibilizou nas traduções. Exemplo abaixo.
     >
       <MyComponent />
     </TranslationProvider>
@@ -229,20 +229,27 @@ Aqui estão as classes CSS que você pode sobrescrever para personalizar a apar�
 </details>
 
 ---
+### Como contribuir
+Para contribuir com o projeto, leia o arquivo [CONTRIBUTING.md](/CONTRIBUTING.md)
 
+---
 ### Mais infos 
 - [Rtk Translate](https://github.com/vitor-nogueira-dev/rtk-translate) - repositório no GitHub.
 
+---
 ### Dúvidas, sugestões e melhorias 
 Se você tiver dúvidas, quiser relatar um bug ou solicitar novos recursos, por favor, abra uma [issue](https://github.com/vitor-nogueira-dev/rtk-translate/issues) no nosso repositório, ou conecte-se comigo no Linkedin - [Vitor Nogueira](https://www.linkedin.com/in/vitor-nogueira-dev/)
 
+---
 ### Referências
 - [React Flag Kit](https://www.npmjs.com/package/react-flag-kit)
 - [Rtk Translate](https://www.npmjs.com/package/rtk-translate)
 
+---
 ### Licença
 Rtk Translate is [MIT licensed](./LICENSE).
 
+---
 ### Agradecimentos
 
 Este projeto utiliza a biblioteca **React Flag Kit**, cujo copyright é detido por Bowtie AB e está licenciada sob a licença MIT. Detalhes sobre esta licença podem ser encontrados em [MIT licensed](./LICENSE-ReactFlagKit.txt).
