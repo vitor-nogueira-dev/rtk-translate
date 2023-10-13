@@ -32,7 +32,7 @@ function App() {
         storageKey='sua-chave-no-storage' // Chave usada para salvar o idioma selecionado no storage.
         languages={...} // Forneça seus idiomas e traduções aqui. Veja o exemplo abaixo.
         defaultLanguage="seu-idioma-default" // Idioma padrão da aplicação.
-        availableLanguages={["pt", "en"]} // Idiomas que você disponibilizou nas traduções. Exemplo abaixo.
+        availableLanguages={["pt", "en", ...]} // Idiomas que você disponibilizou nas traduções. Exemplo abaixo.
     >
       <MyComponent />
     </TranslationProvider>
