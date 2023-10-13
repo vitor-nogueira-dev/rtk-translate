@@ -1,0 +1,79 @@
+.rtk-language-selector {
+  position: relative;
+  min-width: fit-content;
+}
+
+.rtk-current-language {
+  display: flex;
+  align-items: center;
+  background-color: #2b2b2b;
+  border: 1px solid #ccc;
+  padding: 8px;
+  cursor: pointer;
+  gap: 4px;
+  border-radius: 6px;
+}
+
+.rtk-current-language > img {
+  border-radius: 4px;
+}
+
+.rtk-languages-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid #ccc;
+  min-width: fit-content;
+  background-color: #2b2b2b;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.71);
+  border-radius: 6px;
+  margin-top: 4px;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.rtk-languages-dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+.rtk-languages-dropdown .rtk-language-option > img {
+  border-radius: 4px;
+}
+
+.rtk-language-option,
+.rtk-language-no-results {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  gap: 4px;
+  border-radius: 6px;
+  border-bottom: 1px solid #515050;
+}
+
+.rtk-language-option:last-child {
+  border-bottom: none;
+}
+
+.rtk-language-option:hover {
+  background-color: #515050;
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+.rtk-language-input-search {
+  padding: 12.8px 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: #515050;
+  color: #ccc;
+}
+
+.rtk-flag-placeholder,
+.rtk-language-option > span {
+  color: #ccc;
+}
