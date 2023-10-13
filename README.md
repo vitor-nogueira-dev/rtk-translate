@@ -106,10 +106,12 @@ const availableLanguages = ['pt', 'en', 'fr', 'es'];
 
 ### 2. Uso dentro dos componentes
 
+#### Exemplo de uso com select:
+
 ```typescript
 import { useTranslation } from 'rtk-translate';
 
-function MyComponent() {
+function SellectLang() {
   const { translateText, setCurrentLanguage, currentLanguage } = useTranslation();
 
   const handleLanguageChange = (event) => {
@@ -135,6 +137,28 @@ function MyComponent() {
   );
 }
 ```
+
+#### Exemplo de uso com botões:
+**atenção o onClick precisa ter uma callback, conforme o código abaixo!**
+```typescript
+import { useTranslation } from 'rtk-translate';
+
+function ButtonsLang() {
+  const { setCurrentLanguage } = useTranslation();
+
+  const handleLanguageChange = (lang) =>  setCurrentLanguage(lang);
+
+  return (
+    <section>
+      <ul>
+        <li><button onClick={() => handleLanguageChange('pt')}>🇧🇷 PT-BR</button></li>
+        <li><button onClick={() => handleLanguageChange('en')}>🇺🇸 EN</button></li>
+      </ul>
+    </section>
+  )
+}
+```
+
 
 ## 3. Componente `LanguageSelect`
 O componente `LanguageSelect` é um seletor de idiomas desenvolvido para facilitar a experiência de internacionalização no seu site. Ele foi projetado pensando na usabilidade e eficiência, por isso apresenta as seguintes características:
